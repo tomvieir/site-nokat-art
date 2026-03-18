@@ -21,6 +21,10 @@ export default function BrandMark({
   const centered = align === "center";
   const avatarClassName =
     avatarSize === "lg" ? "h-32 w-32 sm:h-36 sm:w-36" : "h-20 w-20";
+  const imageClassName =
+    avatarSize === "lg"
+      ? "object-contain object-center p-2 scale-[1.16]"
+      : "object-contain object-center p-1.5 scale-[1.26]";
 
   return (
     <div
@@ -36,7 +40,7 @@ export default function BrandMark({
             fill
             priority={priority}
             sizes={avatarSize === "lg" ? "144px" : "80px"}
-            className="object-contain p-3"
+            className={imageClassName}
           />
         </div>
       ) : null}
