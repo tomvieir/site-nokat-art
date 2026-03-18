@@ -1,0 +1,9 @@
+:root {
+  --background: #090b0d;
+  --background-secondary: #12161a;
+  --foreground: #f5efe7;
+  --muted: #b8b0a8;
+  --accent: #d6b8a0;
+  --surface: rgba(255, 255, 255, 0.035);
+  --border-soft: rgba(255, 255, 255, 0.08);
+}
