@@ -3,6 +3,7 @@
 import { useDeferredValue, useState } from "react";
 import type { PhotoCategory, PhotoItem } from "../content/portfolio-data";
 import { galleryCategories } from "../content/portfolio-data";
+import ExpandToggle from "../components/ExpandToggle";
 import FadeIn from "../components/FadeIn";
 import GalleryGrid from "../components/GalleryGrid";
 import Section from "../components/Section";
@@ -20,6 +21,7 @@ export default function GallerySection({ items }: GallerySectionProps) {
       ? items
       : items.filter((item) => item.category === deferredCategory);
   const visibleItems = isExpanded ? filteredItems : filteredItems.slice(0, 4);
+  const hiddenCount = Math.max(filteredItems.length - visibleItems.length, 0);
   const canExpand = filteredItems.length > 4;
 
   return (
@@ -59,13 +61,12 @@ export default function GallerySection({ items }: GallerySectionProps) {
 
       {canExpand ? (
         <FadeIn delay={0.08} className="mt-10 flex justify-center">
-          <button
-            type="button"
-            onClick={() => setIsExpanded((current) => !current)}
-            className="inline-flex items-center justify-center border border-white/[0.12] bg-white/[0.03] px-6 py-3 text-xs font-medium uppercase tracking-[0.28em] text-white/[0.78] hover:border-white/[0.24] hover:bg-white/[0.06]"
-          >
-            {isExpanded ? "View Less" : "View More"}
-          </button>
+          <ExpandToggle
+            expanded={isExpanded}
+            onToggle={() => setIsExpanded((current) => !current)}
+            remainingCount={hiddenCount}
+            itemLabel="wedding frames"
+          />
         </FadeIn>
       ) : null}
     </Section>

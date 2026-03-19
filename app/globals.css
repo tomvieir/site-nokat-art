@@ -59,6 +59,14 @@ body::after {
   filter: blur(70px);
 }
 
+:is(a[href], button, [role="button"], summary, input[type="button"], input[type="submit"], input[type="reset"]) {
+  cursor: pointer;
+}
+
+:is(button:disabled, input:disabled, textarea:disabled, select:disabled, [aria-disabled="true"]) {
+  cursor: not-allowed;
+}
+
 a,
 button {
   transition:
