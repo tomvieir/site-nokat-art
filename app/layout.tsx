@@ -3,6 +3,7 @@ import { Manrope, Raleway } from "next/font/google";
 import "./globals.css";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const siteUrl = "https://www.nokatart.ie";
 
 const bodyFont = Manrope({
   variable: "--font-inter",
@@ -15,6 +16,7 @@ const displayFont = Raleway({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "NOKAT art | Film & Photography",
   description:
     "Wedding films and photography by Jeff, a Brazilian creator based in Kerry, Ireland, told with softness and a less usual point of view.",
@@ -30,12 +32,23 @@ export const metadata: Metadata = {
     description:
       "Wedding films and photography with a warm, cinematic sense of intimacy, atmosphere, and memory.",
     type: "website",
+    url: siteUrl,
+    siteName: "NOKAT art",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "NOKAT art wedding films and photography social preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "NOKAT art | Film & Photography",
     description:
       "Wedding films and photography with a warm, cinematic sense of intimacy, atmosphere, and memory.",
+    images: ["/twitter-image"],
   },
   icons: {
     icon: [
