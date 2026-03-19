@@ -9,7 +9,8 @@
     "lint": "eslint",
     "optimize:images": "powershell -ExecutionPolicy Bypass -File scripts/optimize-images.ps1",
     "optimize:videos": "powershell -ExecutionPolicy Bypass -File scripts/optimize-videos.ps1",
-    "export:docs": "powershell -ExecutionPolicy Bypass -File scripts/export-docs.ps1"
+    "export:docs": "powershell -ExecutionPolicy Bypass -File scripts/export-docs.ps1",
+    "export:docs:domain": "powershell -ExecutionPolicy Bypass -File scripts/export-docs-domain.ps1"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",

@@ -21,8 +21,8 @@ export default function OtherStoriesSection({
     <Section
       id="other-stories"
       eyebrow="Beyond Weddings"
-      title="The same eye also moves through family, portrait, and live work."
-      description="Weddings stay at the center of the portfolio, but the quieter documentary sensibility carries into other kinds of stories too."
+      title="The same eye also moves through maternity, family, portrait, and live work."
+      description="Weddings stay at the center of the portfolio, but the same softness also carries into maternity stories, family frames, portraits, and live sessions."
       className="pt-8"
     >
       <FadeIn>

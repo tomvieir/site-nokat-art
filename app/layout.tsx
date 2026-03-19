@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Manrope, Raleway } from "next/font/google";
 import "./globals.css";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const bodyFont = Manrope({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -34,6 +36,14 @@ export const metadata: Metadata = {
     title: "NOKAT art | Film & Photography",
     description:
       "Wedding films and photography with a warm, cinematic sense of intimacy, atmosphere, and memory.",
+  },
+  icons: {
+    icon: [
+      { url: `${basePath}/icon?any`, type: "image/png", sizes: "64x64" },
+      { url: `${basePath}/icon?mask`, type: "image/png", sizes: "64x64" },
+    ],
+    apple: [{ url: `${basePath}/icon?apple`, type: "image/png", sizes: "64x64" }],
+    shortcut: [`${basePath}/icon`],
   },
 };
 

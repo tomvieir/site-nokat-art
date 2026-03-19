@@ -2,7 +2,15 @@ import type { NextConfig } from "next";
 
 const repoName = "site-nokat-art";
 const isGithubPages = process.env.GITHUB_ACTIONS === "true";
-const basePath = isGithubPages ? `/${repoName}` : "";
+const configuredBasePath = process.env.SITE_BASE_PATH;
+const basePath =
+  configuredBasePath !== undefined
+    ? configuredBasePath === "__ROOT__"
+      ? ""
+      : configuredBasePath
+    : isGithubPages
+      ? `/${repoName}`
+      : "";
 
 const nextConfig: NextConfig = {
   output: "export",
