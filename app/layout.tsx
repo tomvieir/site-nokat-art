@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "NOKAT art | Film & Photography",
   description:
-    "Wedding films and photography by Jeff, a Brazilian creator based in Kerry, Ireland, told with softness and a less usual point of view.",
+    "Wedding films and photography by Jeff, a Brazilian creator based in Kerry, Ireland.",
   keywords: [
     "NOKAT art",
     "wedding filmmaker",

@@ -87,9 +87,7 @@ export default function Hero({ videoSrc }: HeroProps) {
             }}
             className="text-balance mx-auto mt-6 max-w-2xl text-base leading-8 text-white/[0.72] sm:text-lg sm:leading-9"
           >
-            Brazilian creator based in Kerry, Ireland, capturing weddings with
-            softness, honesty, and a less usual point of view, drawn from the
-            corners most people never notice.
+            Brazilian creator based in Kerry, Ireland.
           </motion.p>
 
           <motion.div
