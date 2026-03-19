@@ -2,6 +2,7 @@
   | "wedding"
   | "prewedding"
   | "family"
+  | "editorial"
   | "portrait"
   | "live";
 
@@ -319,6 +320,51 @@ export const photos: PhotoItem[] = [
     7227,
   ),
   photo(
+    "iceland-stillness",
+    "Icelandjune2025-45.JPG",
+    "editorial",
+    "A quieter editorial frame carried by wind, distance, and open coast.",
+    "Editorial Frame",
+    1920,
+    2400,
+  ),
+  photo(
+    "iceland-portrait",
+    "Icelandjune2025-46.JPG",
+    "editorial",
+    "A softer portrait held against northern light and weather.",
+    "Northern Portrait",
+    1920,
+    2400,
+  ),
+  photo(
+    "iceland-horizon",
+    "Icelandjune2025-64.JPG",
+    "editorial",
+    "A wider frame where figure, place, and atmosphere stay in balance.",
+    "Open Horizon",
+    2200,
+    1238,
+  ),
+  photo(
+    "limerick-portrait",
+    "Limerick-Chris22feb2025-25.jpg",
+    "portrait",
+    "A portrait shaped by quieter city light and an easy stillness.",
+    "City Portrait",
+    3780,
+    2835,
+  ),
+  photo(
+    "limerick-light",
+    "Limerick-Chris22feb2025-40.jpg",
+    "portrait",
+    "A warmer frame where portrait and evening atmosphere hold together.",
+    "Limerick Light",
+    5163,
+    3872,
+  ),
+  photo(
     "artist-portrait",
     "@nokatartukbsb2023_107.jpg",
     "portrait",
@@ -437,10 +483,15 @@ export const galleryPhotos: PhotoItem[] = [
 
 export const otherStoriesPhotos: PhotoItem[] = [
   photoById["maternity-shoreline"],
+  photoById["limerick-light"],
+  photoById["limerick-portrait"],
   photoById["maternity-embrace"],
+  photoById["iceland-portrait"],
   photoById["maternity-distance"],
   photoById["maternity-laughter"],
   photoById["maternity-profile"],
+  photoById["iceland-stillness"],
+  photoById["iceland-horizon"],
   photoById["family-gathering"],
   photoById["artist-portrait"],
   photoById["band-portrait"],

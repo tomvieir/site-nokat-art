@@ -7,8 +7,8 @@ export default function SiteFooter() {
         <div className="space-y-4">
           <BrandMark avatarSize="sm" />
           <p className="max-w-md text-sm leading-7 text-white/[0.58]">
-            Wedding films and photography from Kerry, Ireland, shaped with
-            softness, atmosphere, and a quieter documentary pulse.
+            Based in Kerry, Ireland, with weddings at the center and a softer
+            eye for the moments around them.
           </p>
         </div>
 

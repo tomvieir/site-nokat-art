@@ -8,8 +8,7 @@ export default function AboutSection() {
     <Section
       id="about"
       eyebrow="About"
-      title="A wedding-first approach, told with softness."
-      description="The point of view stays close to real feeling: less obvious, less staged, and more attentive to the details that turn a wedding into memory."
+      title="A wedding-first approach."
       className="pt-10"
       contentClassName="grid items-center gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:gap-16"
     >
@@ -34,12 +33,17 @@ export default function AboutSection() {
           Brazilian creator based in Kerry, Ireland
         </p>
 
-        <p className="text-balance font-serif text-4xl font-light leading-tight tracking-[-0.05em] text-foreground sm:text-5xl lg:text-[3.5rem]">
-          I&apos;m Jeff, and weddings sit at the heart of the work, approached
-          through film and photography with a quieter, more unusual gaze.
+        <p className="mt-3 text-balance font-serif text-[2.4rem] font-light leading-[1.06] tracking-[-0.05em] text-foreground sm:text-[3rem] lg:text-[3.2rem]">
+          I&apos;m Jeff. I make wedding films and photography, alongside other
+          artistic work.
         </p>
 
-        <p className="mt-8 text-lg leading-9 text-muted">
+        <p className="mt-7 text-lg leading-8 text-muted">
+          Weddings stay at the heart of the portfolio, but the same eye also
+          moves through maternity, family, portraits, and live sessions.
+        </p>
+
+        <p className="mt-6 text-lg leading-8 text-muted">
           I&apos;m drawn to the hidden places inside a wedding day: the pause before
           the ceremony, the closeness of family, the gestures that happen just
           outside the center of attention. The result stays cinematic, but never

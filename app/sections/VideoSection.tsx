@@ -30,8 +30,8 @@ export default function VideoSection({ items }: VideoSectionProps) {
       <Section
         id="films"
         eyebrow="Wedding Films"
-        title="Wedding films told from a less usual point of view."
-        description="The films lead the page with atmosphere first: intimate cuts, quieter angles, and a perspective that stays close to the feeling of the day."
+        title="The films lead with atmosphere first."
+        description="Intimate cuts, quieter angles, and the feeling of the day held before spectacle."
         className="pb-10"
       >
         <div className={`${items.length === 1 ? "mx-auto max-w-5xl" : "grid gap-6 lg:grid-cols-2"}`.trim()}>

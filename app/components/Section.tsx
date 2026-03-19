@@ -40,7 +40,7 @@ export default function Section({
                 ) : null}
 
                 {title ? (
-                  <h2 className="text-balance font-serif text-4xl font-light leading-tight tracking-[-0.05em] text-foreground sm:text-5xl lg:text-[3.6rem]">
+                  <h2 className="text-balance font-serif text-[2.35rem] font-light leading-[1.06] tracking-[-0.05em] text-foreground sm:text-[3rem] lg:text-[3.25rem] xl:text-[3.55rem]">
                     {title}
                   </h2>
                 ) : null}
@@ -49,7 +49,7 @@ export default function Section({
 
             {description ? (
               <FadeIn delay={0.06} y={18} amount={0.2}>
-                <p className="mt-5 text-balance text-base leading-8 text-muted sm:text-lg">
+                <p className="mt-5 max-w-2xl text-balance text-base leading-8 text-muted sm:text-lg">
                   {description}
                 </p>
               </FadeIn>
