@@ -64,17 +64,14 @@ function PhotoCard({ item, index, variant, onImageError }: PhotoCardProps) {
               className="h-auto w-full bg-background-secondary object-cover transition-transform duration-900 ease-out group-hover:scale-[1.03]"
             />
           </motion.div>
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,10,12,0.02)_8%,rgba(8,10,12,0.08)_34%,rgba(8,10,12,0.5)_100%)] transition-opacity duration-700 group-hover:opacity-90" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,10,12,0.22)_0%,rgba(8,10,12,0.03)_24%,rgba(8,10,12,0.08)_100%)] opacity-70 transition-opacity duration-700 group-hover:opacity-90" />
           <motion.div
             style={{ y: contentY }}
-            className="absolute inset-x-0 bottom-0 p-4 sm:p-5"
+            className="absolute left-4 top-4 sm:left-5 sm:top-5"
           >
             <span className="inline-flex border border-white/[0.12] bg-black/28 px-3 py-2 text-[0.62rem] uppercase tracking-[0.28em] text-white/[0.72] backdrop-blur-md transition-transform duration-500 group-hover:translate-y-[-2px]">
               {item.label}
             </span>
-            <p className="mt-4 max-w-sm font-serif text-2xl font-light leading-tight tracking-[-0.04em] text-foreground transition-transform duration-500 group-hover:translate-y-[-2px]">
-              {item.title}
-            </p>
           </motion.div>
         </div>
       </motion.figure>

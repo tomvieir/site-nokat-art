@@ -10,17 +10,17 @@ export default function AboutSection() {
       eyebrow="About"
       title="A wedding-first approach."
       className="pt-10"
-      contentClassName="grid items-center gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:gap-16"
+      contentClassName="grid items-center gap-10 lg:grid-cols-[0.74fr_1.26fr] lg:gap-14"
     >
-      <FadeIn>
-        <div className="relative overflow-hidden rounded-[2rem] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.01)_100%)] shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-sm">
-          <div className="relative aspect-[4/5] min-h-[26rem]">
+      <FadeIn className="mx-auto w-full max-w-[24rem] sm:max-w-[28rem] lg:mx-0 lg:max-w-[29rem]">
+        <div className="relative overflow-hidden rounded-[1.35rem] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.01)_100%)] shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-sm lg:rounded-[1.6rem]">
+          <div className="relative aspect-[4/5] min-h-[22rem]">
             <Image
               src={personalPortraitSrc}
               alt="Jeff, filmmaker and photographer behind NOKAT art."
               fill
               priority
-              sizes="(max-width: 1024px) 100vw, 40vw"
+              sizes="(max-width: 1024px) min(100vw, 28rem), 29rem"
               className="object-cover object-[center_22%]"
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,10,12,0.02)_5%,rgba(8,10,12,0.18)_55%,rgba(8,10,12,0.58)_100%)]" />
